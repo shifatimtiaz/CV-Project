@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifat Imtiaz - CV Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Shifat Imtiaz</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">Dark Mode</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <img src="https://via.placeholder.com/150" alt="Shifat Imtiaz" class="profile-img">
+            <h1>Hi, I'm Shifat Imtiaz</h1>
+            <p>CSE Student | Guitarist | Artist</p>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <p><strong>Age:</strong> 21</p>
+                <p><strong>Religion:</strong> Islam</p>
+                <p><strong>Home District:</strong> Chattogram</p>
+                <p><strong>University:</strong> Premier University Chattogram</p>
+                <p><strong>Department:</strong> Computer Science and Engineering</p>
+                <p><strong>Degree:</strong> Honours (3rd Semester)</p>
+                <p><strong>Occupation:</strong> Tuition Teacher</p>
+                <p><strong>Hobbies:</strong> Playing Guitar, Painting, Drawing</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Languages & Skills</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Bangla (Native)</li>
+                        <li>English (Fluent)</li>
+                        <li>German (Basic)</li>
+                        <li>Hindi (Conversational)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-list">
+                        <label><input type="checkbox" checked disabled> HTML/CSS</label>
+                        <label><input type="checkbox" checked disabled> JavaScript</label>
+                        <label><input type="checkbox" checked disabled> Python</label>
+                        <label><input type="checkbox" checked disabled> C++</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contact-form" class="card">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <small class="error" id="name-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <small class="error" id="email-error"></small>
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="">Select a subject</option>
+                        <option value="tuition">Tuition Inquiry</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="form-status"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shifat Imtiaz. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
